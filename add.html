@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Add Recipe - Podi & Paasam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Add Recipe</h1>
+    <button onclick="location.href='index.html'">⬅ Back</button>
+  </header>
+
+  <form id="recipeForm">
+    <input type="text" id="name" placeholder="Recipe Name" required />
+    <textarea id="ingredients" placeholder="Ingredients and Quantity" required></textarea>
+    <textarea id="method" placeholder="Method" required></textarea>
+    <select id="category" required>
+      <option disabled selected value="">Select Category</option>
+      <option>Tiffin Varieties</option>
+      <option>Healthy Recipes</option>
+      <option>One Pot Recipes</option>
+    </select>
+    <input type="file" id="photo" accept="image/*" />
+    <button type="submit">Add Recipe</button>
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>

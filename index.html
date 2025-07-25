@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Podi & Paasam</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div id="menu" onclick="toggleMenu()">☰</div>
+    <h1>Podi & Paasam</h1>
+    <button onclick="location.href='add.html'">➕ Add Recipe</button>
+  </header>
+
+  <nav id="dropdownMenu" class="hidden">
+    <ul>
+      <li onclick="filterCategory('Tiffin Varieties')">Tiffin Varieties</li>
+      <li onclick="filterCategory('Healthy Recipes')">Healthy Recipes</li>
+      <li onclick="filterCategory('One Pot Recipes')">One Pot Recipes</li>
+      <li onclick="filterCategory('all')">Show All</li>
+    </ul>
+  </nav>
+
+  <main id="recipeList"></main>
+
+  <script src="script.js"></script>
+</body>
+</html>

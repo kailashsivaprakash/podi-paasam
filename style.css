@@ -1,0 +1,123 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  background: #fff8f0;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffb347;
+  padding: 10px 20px;
+  color: #333;
+  flex-wrap: wrap;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+  flex: 1 1 100%;
+  text-align: center;
+}
+
+#menu {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+button {
+  padding: 8px 12px;
+  background-color: #ff6347;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+textarea, input, select {
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+#dropdownMenu {
+  background: #ffe5b4;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  width: 200px;
+  display: none;
+  z-index: 10;
+}
+
+#dropdownMenu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#dropdownMenu li {
+  padding: 10px;
+  cursor: pointer;
+  border-bottom: 1px solid #f4d38f;
+}
+
+#dropdownMenu li:hover {
+  background-color: #ffd28d;
+}
+
+main {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.recipe {
+  background: #fff;
+  border: 1px solid #ddd;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+}
+
+.recipe img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 6px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  header {
+    flex-wrap: nowrap;
+  }
+
+  header h1 {
+    flex: 1 1 auto;
+    text-align: left;
+  }
+
+  form {
+    padding: 30px;
+  }
+}
